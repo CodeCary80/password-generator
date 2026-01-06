@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PasswordGenerator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&family=Bebas+Neue&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Happy+Monkey&family=Henny+Penny&family=Karla:ital,wght@0,200..800;1,200..800&family=Lacquer&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Playfair+Display:wght@600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Special+Elite&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <header id="hero-section">
+            <h1 id="hero-text1">Generate a</h1>
+            <p id="hero-text2">random password</p>
+            <p id="hero-text3">Never use an insecure password again.</p>
+        </header>
+        
+        <div id="controller">
+            <div id="controller-left">
+                <div>
+                    <h3>Uppercase Letters</h3>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div>
+                    <h3>Lowercase Letters</h3>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div>
+                    <h3>Numbers</h3>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div>
+                    <h3>Symbols</h3>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+
+            <div id="controller-right">
+                <h2>Password length</h2>
+                    <input
+                        type="number"
+                        id="length-input"
+                        placeholder="8"
+                        min="1"
+                        max="64"
+                    />
+                        <div id="password-strength">
+                            <h2 id="strength-text"></h2>
+                        </div>
+                 </div>
+            </div>
+
+        <div id="generating">
+            <button>Generate passwords</button>
+            <div id="separator"></div>
+            <div id="generate-field">
+                <span id="password1"></span>
+                <span id="password2"></span>
+            </div>
+        </div>   
+    </main>
+    <script src="index.js"></script>
+    </div>
+</body>
+</html>

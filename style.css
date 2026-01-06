@@ -1,0 +1,272 @@
+body{
+  font-family: "Karla", sans-serif;
+  background-color: #1F2937;
+  color: white;
+  margin: 0;
+}
+
+#hero-section{
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+#hero-text1{
+    font-weight: 800;
+    font-size: 3.2rem;
+    margin-bottom: 0;
+}
+
+#hero-text2{
+    margin-top: -10px;
+    font-weight: 800;
+    font-size: 3.2rem;
+    margin-bottom: 0;
+    color: #4ADF86;
+}
+
+#hero-text3{
+    margin-top: 10px;
+    font-weight: 100;
+    font-size: 1.8rem;
+}
+
+main{
+    width: 100%;
+    max-width: 1100px;
+    padding: 10px 32px;
+    margin: 0 auto;
+}
+
+#controller{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin-top: 40px;
+    align-items: start;
+
+}
+
+#controller-left > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+#controller-left > h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+
+#controller-right{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#controller-right h2{
+    font-size: 1.6rem;
+    color: #4ADF86;
+    margin: 0 0 15px 0;
+}
+
+#controller-right input[type="number"] {
+  width: 100%;
+  max-width: 300px;
+  height: 50px;
+  background-color: #273549;
+  border: 2px solid #4ADF86;
+  border-radius: 8px;
+  color: white;
+  font-size: 1.3rem;
+  padding: 0 15px;
+  outline: none;
+  transition: box-shadow 0.2s ease;
+}
+
+#controller-right input[type="number"]::placeholder {
+  color: #8FA6C1;
+}
+
+#controller-right input[type="number"]:focus {
+  box-shadow: 0 0 0 2px rgba(74, 223, 134, 0.3);
+}
+
+#password-strength h2{
+    font-size: 1.4rem;
+    margin: 0;
+    padding: 8px 16px;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+#password-strength h2.weak{
+    color:#ef4444;
+    background-color: rgba(239, 68, 68, 0.1);
+    border: 1px solid #ef4444;
+}
+
+#password-strength h2.good{
+    color:#f59e0b;
+    background-color: rgba(245, 158, 11, 0.1);
+    border: 1px solid #f59e0b;
+}
+
+#password-strength h2.strong{
+    color:#10b981;
+    background-color: rgba(16, 185, 129, 0.1);
+    border: 1px solid #10b981;
+}
+
+#password-strength h2.excellent{
+    color:#4ADF86;
+    background-color: rgba(74, 223, 134, 0.1);
+    border: 1px solid #4ADF86;
+}
+
+
+#separator {
+  height: 1px;
+  background-color: #2F3E53;
+  margin: 50px 0;
+}
+
+#generating {
+  margin-top: 50px;
+  text-align: center;
+}
+
+button{
+    margin-top: 30px;
+    background-color: #10B981;
+    color: white;
+    padding: 15px 0;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 10px;
+    width: 300px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1 ease;
+    font-weight: 600;
+}
+button:hover{
+    background-color: #059669;
+    transform: translateY(-2px);
+}
+ button:active {
+    transform: translateY(0);
+}
+#separator{
+    height: 1px;
+    background-color: #2F3E53;
+    margin: 50px 0;
+}
+#generate-field{
+    display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap:wrap;
+}
+#password1, #password2{
+    border: 2px solid #2F3E53;
+    border-radius: 10px;
+    background-color: #273549;
+    color: white;
+    padding: 15px 0;
+    width: 340px;
+    height: 30px;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 0.2s ease;
+    font-family: 'Courier New', Courier, monospace;
+    white-space: normal;
+    word-break: break-all;
+}
+
+#password1:hover, #password2:hover {
+    border-color: #4ADF86;
+        }
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  height: 34px;
+  border: 1px solid #09ABFF;
+  border-radius: 20px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #1F2937;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #4ADF86;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #4ADF86;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(46px);
+  -ms-transform: translateX(46px);
+  transform: translateX(46px);
+}
+
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+@media (max-width: 768px) {
+    #controller {
+    grid-template-columns: 1fr;
+    }
+            
+    #generate-field {
+    flex-direction: column;
+    align-items: center;
+    }
+
+    #password1, #password2 {
+    width: 100%;
+    max-width: 340px;
+    }
+}
